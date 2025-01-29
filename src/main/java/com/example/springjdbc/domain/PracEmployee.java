@@ -1,19 +1,12 @@
 package com.example.springjdbc.domain;
 
-public class Employee {
+public class PracEmployee {
     private Integer id;
     private String name;
     private Integer age;
     private String gender;
     private Integer departmentId;
     
-
-    @Override
-    public String toString() {
-        return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", gender=" + gender + ", departmentId="
-                + departmentId + "]";
-    }
-
     public Integer getId() {
         return id;
     }
@@ -44,5 +37,4 @@ public class Employee {
     public void setDepartmentId(Integer departmentId) {
         this.departmentId = departmentId;
     }
-    
 }

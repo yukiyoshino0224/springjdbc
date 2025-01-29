@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PracEmployee Registration</title>
+</head>
+<body>
+
+<h1>従業員登録</h1>
+
+<form action="#" th:action="@{/employee/save}" th:object="${pracEmployee}" method="post">
+    <label for="name">名前:</label>
+    <input type="text" id="name" th:field="*{name}" /><br><br>
+
+    <label for="age">年齢:</label>
+    <input type="text" id="age" th:field="*{age}" /><br><br>
+
+    <label for="gender">性別:</label>
+    <input type="radio" id="male" th:field="*{gender}" value="男" /> 男
+    <input type="radio" id="female" th:field="*{gender}" value="女" /> 女<br><br>
+
+    <label for="departmentId">部署ID:</label>
+    <input type="text" id="departmentId" th:field="*{departmentId}" /><br><br>
+
+    <button type="submit">登録</button>
+</form>
+
+</body>
+</html>
